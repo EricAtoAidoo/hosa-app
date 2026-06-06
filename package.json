@@ -1,0 +1,15 @@
+{
+  "name": "hosa-smart-system",
+  "version": "2.0.0",
+  "description": "HOSA Smart Membership & Contribution Management System — React + Node.js + PostgreSQL",
+  "private": true,
+  "scripts": {
+    "install:all":   "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend":   "npm run dev --prefix backend",
+    "dev:frontend":  "npm start --prefix frontend",
+    "build":         "npm run build --prefix frontend",
+    "start:backend": "npm start --prefix backend",
+    "setup:db": "psql -U postgres -d hosa_db -f backend/src/db/schema.sql"
+  },
+  "keywords": ["hosa","membership","contributions","react","nodejs","postgresql"]
+}
